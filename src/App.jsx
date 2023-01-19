@@ -4,11 +4,13 @@ import { arrayItems } from "./AIOptions";
 
 function App() {
   //console.log(import.meta.env.VITE_Open_AI_Key);
-  console.log(arrayItems);
+  const selectOption = (option) => {
+    console.log(option);
+  };
 
   return (
     <h1 className="App">
-      <OptionSelection arrayItems={arrayItems} />
+      <OptionSelection arrayItems={arrayItems} selectOption={selectOption} />
     </h1>
   );
 }
