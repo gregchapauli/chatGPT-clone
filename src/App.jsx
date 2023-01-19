@@ -1,13 +1,15 @@
-import { useState } from "react";
 import "./App.css";
+import OptionSelection from "./components/OptionSelection";
+import { arrayItems } from "./AIOptions";
 
 function App() {
-  const [count, setCount] = useState(0);
+  //console.log(import.meta.env.VITE_Open_AI_Key);
+  console.log(arrayItems);
 
   return (
-    <div className="App">
-      <p>Hello</p>
-    </div>
+    <h1 className="App">
+      <OptionSelection arrayItems={arrayItems} />
+    </h1>
   );
 }
 
