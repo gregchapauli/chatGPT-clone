@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Translation({ doStuff, setInput }) {
+export default function Translation({ doStuff, setInput, result }) {
   return (
     <div>
       <textarea
@@ -12,6 +12,8 @@ export default function Translation({ doStuff, setInput }) {
       <button className="action-btn" onClick={doStuff}>
         DO YOUR STUFF!
       </button>
+
+      <h3 className="result-text">{result.length > 0 ? result : ""}</h3>
     </div>
   );
 }

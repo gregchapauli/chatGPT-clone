@@ -11,6 +11,7 @@ export default function OptionSelection({ arrayItems, selectOption }) {
             <div
               className="grid-child"
               onClick={() => selectOption(item.option)}
+              key={item.id}
             >
               <h3>{item.name}</h3>
               <p>{item.description}</p>

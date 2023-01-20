@@ -54,3 +54,8 @@
   margin-top: 20px;
   cursor: pointer;
 }
+
+.result-text {
+  border: 1px solid whitesmoke;
+  height: 50px;
+}
