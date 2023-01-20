@@ -13,7 +13,8 @@
 
 .grid-main {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
+  justify-content: center;
   gap: 15px;
   margin-top: 40px;
 }
@@ -53,9 +54,4 @@
   font-size: 20px;
   margin-top: 20px;
   cursor: pointer;
-}
-
-.result-text {
-  border: 1px solid whitesmoke;
-  height: 50px;
 }

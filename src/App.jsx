@@ -28,7 +28,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div>
       {Object.values(option).length === 0 ? (
         <OptionSelection arrayItems={arrayItems} selectOption={selectOption} />
       ) : (
